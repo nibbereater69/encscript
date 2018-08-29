@@ -1,8 +1,6 @@
---Encryptor Made By Top GEO
 print('Script Encryptor Made By Top GEO')
 function encodes(key,code)
-   return (code:gsub('..', function (h) return string.char((tonumber(h,16)+256-13 - key + 999999*256)%256) end))
-end
+   return (code:gsub('..', function (h) return string.char((tonumber(h,16)+256-13 - key + 999999*256)%256) end))end
 
 local v_value=gg.prompt({'Enter password:'},{[1]=0},{[1]='number'})
 
